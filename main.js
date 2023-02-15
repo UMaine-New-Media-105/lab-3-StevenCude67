@@ -4,15 +4,15 @@ function setup() {
 
 function draw() {
   background(220);
-  drawWeirdShape();
+  drawWeirdShape("red", "rebeccapurple");
 }
 
-function drawWeirdShape(){
+function drawWeirdShape(fillOne, fillTwo){
   fill("rebeccapurple")
    if(mouseX < 100){
-    fill("green")
+    fill(fillOne)
   }else if(mouseX >= 100 && mouseX < 200){
-    fill("brown");
+    fill(fillTwo);
   }else if(mouseX >= 200 && mouseX < 300){
     fill("yellow")
   }else{
