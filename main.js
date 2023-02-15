@@ -4,9 +4,12 @@ function setup() {
 
 function draw() {
   background(220);
+  drawWeirdShape();
+}
+
+function drawWeirdShape(){
   fill("rebeccapurple")
-  
-  if(mouseX < 100){
+   if(mouseX < 100){
     fill("green")
   }else if(mouseX >= 100 && mouseX < 200){
     fill("brown");
@@ -21,6 +24,4 @@ function draw() {
   noStroke();
   ellipse(150, 150, 100);
   ellipse(250, 250, 100);
-  
-
 }
